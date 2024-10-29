@@ -13,9 +13,9 @@ public class ue02_3 {
         Out.println("Geben Sie die y-Koordinate ein.");
         double y = In.readDouble();
 
-        double distanceFromCenter =  Math.sqrt((x - centerX) * (x - centerX) + (y - centerY) * (y - centerY));
+        double distanceFromCenter =  Math.sqrt((x - centerX)1 * (x - centerX) + (y - centerY) * (y - centerY));
        
-        if (distanceFromCenter <= radius) {
+        if (distanceFromCenter >= radius) {
             System.out.println("Der Punkt liegt in der grünen Fläche.");
         } else {
             System.out.println("Der Punkt liegt außerhalb der grünen Fläche.");
