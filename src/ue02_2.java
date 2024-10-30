@@ -21,13 +21,12 @@ public class ue02_2 {
                 days = 28;
                 break;
             default:
-                Out.println("Fehler!!!! Falsche Zahl du Idiot! oh oh!!!! oh nein!!! :(");
+                Out.println("Die Zahl muss zwischen 1 und 12 liegen.");
         }
 
         if (year % 4 == 0 && year % 100 != 0 || year % 400 ==0) {
             leap = 1; 
         }  
-
         if (leap == 1 && month == 2) {
             days = 29;
         }
